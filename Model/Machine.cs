@@ -2,7 +2,7 @@
 {
     public abstract class Machine
     {
-        public int dailyThroughput;
+        public int dailyThroughput {  get; set; }
 
         public int calculateDays(int loadWeight)
         {
