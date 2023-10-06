@@ -1,4 +1,6 @@
-﻿using UtilizationFactory.Model;
+﻿using UtilizationFactory.Controller;
+using UtilizationFactory.Model;
+using UtilizationFactory.View;
 
 namespace UtilizationFactory
 {
@@ -6,9 +8,10 @@ namespace UtilizationFactory
     {
         static void Main(string[] args)
         {
-            Crusher crusher = new();
-            Console.WriteLine(crusher.calculateDays(20));
-
+            Display display = new Display();
+            UtilizationProcess process = new UtilizationProcess();
+            var tonageDict = display.Menu();
+            process.CalculateUtilizationProcessDaysLength(tonageDict);
         }
     }
 }
