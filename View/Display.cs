@@ -34,7 +34,7 @@ namespace UtilizationFactory.View
         public void DisplayResult(int result)
         {
             Console.WriteLine("------R-E-S-U-L-T-------");
-            Console.WriteLine($"THE PROCESS WILL TAKE A TOTAL: {result} DAYS THANK YOU!");
+            Console.WriteLine($"THE UTILIZATION PROCESS WILL TAKE {result} DAYS THANK YOU!");
         }
     }
 }
